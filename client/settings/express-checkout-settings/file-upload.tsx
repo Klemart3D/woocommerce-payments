@@ -96,6 +96,8 @@ const WooPayFileUpload: React.FunctionComponent< WooPayFileUploadProps > = ( {
 			recordEvent( 'wcpay_merchant_settings_file_upload_success', {
 				type: key,
 			} );
+			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+			// @ts-ignore
 		} catch ( { err } ) {
 			recordEvent( 'wcpay_merchant_settings_upload_failed', {
 				message: ( err as Error ).message,
