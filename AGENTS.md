@@ -122,20 +122,20 @@ WooPayments integrates with WooCommerce core via hooks, filters, and APIs.
 
 ### Development
 ```bash
-npm install                         # Install dependencies
-npm start                           # Watch JS changes (alias: npm run watch)
-npm run hmr                         # Hot module replacement server
-npm run up                          # Start Docker environment
-npm run dev                         # Start Docker + watch mode
+pnpm install                         # Install dependencies
+pnpm start                           # Watch JS changes (alias: pnpm run watch)
+pnpm run hmr                         # Hot module replacement server
+pnpm run up                          # Start Docker environment
+pnpm run dev                         # Start Docker + watch mode
 ```
 
 ### PHP Tests
 ```bash
-npm run test:php                    # Run all (first run sets up environment)
-npm run test:php-watch              # Watch mode
-npm run test:php-coverage           # With coverage
+pnpm run test:php                    # Run all (first run sets up environment)
+pnpm run test:php-watch              # Watch mode
+pnpm run test:php-coverage           # With coverage
 
-# Specific test (after initial npm run test:php setup):
+# Specific test (after initial pnpm run test:php setup):
 docker compose exec -u www-data wordpress bash -c \
   "cd /var/www/html/wp-content/plugins/woocommerce-payments && \
   vendor/bin/phpunit --configuration phpunit.xml.dist --filter 'TestClassName::test_method_name'"
@@ -143,56 +143,56 @@ docker compose exec -u www-data wordpress bash -c \
 
 ### JavaScript Tests
 ```bash
-npm run test:js                     # Run all JS tests
-npm run test:watch                  # Watch mode
-npm run test:debug                  # Debug mode
-npm run test:update-snapshots       # Update snapshots
+pnpm run test:js                     # Run all JS tests
+pnpm run test:watch                  # Watch mode
+pnpm run test:debug                  # Debug mode
+pnpm run test:update-snapshots       # Update snapshots
 ```
 
 ### E2E Tests
 
 E2E tests use Playwright in Docker containers against a local WordPress site with real Stripe test transactions.
 
-**First-time setup:** Run `bin/setup-e2e-local.sh` to auto-generate `tests/e2e/config/local.env` from your local infrastructure, then `npm run build:client && npm run test:e2e-setup`. See the E2E skill (`/e2e-testing`) or `tests/e2e/README.md` for full details.
+**First-time setup:** Run `bin/setup-e2e-local.sh` to auto-generate `tests/e2e/config/local.env` from your local infrastructure, then `pnpm run build:client && pnpm run test:e2e-setup`. See the E2E skill (`/e2e-testing`) or `tests/e2e/README.md` for full details.
 
 ```bash
-npm run test:e2e                    # Run all E2E tests (headless)
-npm run test:e2e-ui                 # Interactive UI mode (localhost:8077)
-npm run test:e2e-setup              # First-time E2E environment setup
-npm run test:e2e-up                 # Start existing E2E containers
-npm run test:e2e-down               # Stop E2E containers
+pnpm run test:e2e                    # Run all E2E tests (headless)
+pnpm run test:e2e-ui                 # Interactive UI mode (localhost:8077)
+pnpm run test:e2e-setup              # First-time E2E environment setup
+pnpm run test:e2e-up                 # Start existing E2E containers
+pnpm run test:e2e-down               # Stop E2E containers
 
 # Run specific tests
-npm run test:e2e tests/e2e/specs/wcpay/merchant/  # All merchant tests
-npm run test:e2e tests/e2e/specs/wcpay/shopper/   # All shopper tests
-npm run test:e2e -- -g "dispute"                   # By test name
+pnpm run test:e2e tests/e2e/specs/wcpay/merchant/  # All merchant tests
+pnpm run test:e2e tests/e2e/specs/wcpay/shopper/   # All shopper tests
+pnpm run test:e2e -- -g "dispute"                   # By test name
 ```
 
 **E2E environment ports:** WordPress `:8084` | phpMyAdmin `:8085` | Transact Server `:8088` | Playwright UI `:8077`
 
 ### Build & Quality
 ```bash
-npm run build:client                # Build production JS
-npm run build                       # Build release package
-npm run lint                        # Run all linters
-npm run lint:js                     # ESLint + TypeScript
-npm run lint:php                    # PHPCS
-npm run lint:php-fix                # Auto-fix PHP issues
-npm run format                      # Format with Prettier
-npm run psalm                       # PHP static analysis
+pnpm run build:client                # Build production JS
+pnpm run build                       # Build release package
+pnpm run lint                        # Run all linters
+pnpm run lint:js                     # ESLint + TypeScript
+pnpm run lint:php                    # PHPCS
+pnpm run lint:php-fix                # Auto-fix PHP issues
+pnpm run format                      # Format with Prettier
+pnpm run psalm                       # PHP static analysis
 ```
 
 ### Changelog
 ```bash
-npm run changelog                   # Interactive
-npm run changelog:add -- --type=fix --entry="Fixed a bug"
-npm run changelog:add -- --type=add --entry="Added feature" --significance=minor
+pnpm run changelog                   # Interactive
+pnpm run changelog:add -- --type=fix --entry="Fixed a bug"
+pnpm run changelog:add -- --type=add --entry="Added feature" --significance=minor
 ```
 Types: `add`, `fix`, `update`, `dev`. Significances: `patch` (default), `minor`, `major`. Entries go in `changelog/`.
 
 ### Other
 ```bash
-npm run i18n:pot                    # Generate translations
+pnpm run i18n:pot                    # Generate translations
 ```
 
 ## Git Workflow
@@ -207,7 +207,7 @@ gh pr list --head "$(git branch --show-current)" --state merged --json number --
 If non-zero, create a new branch off `develop` instead.
 
 **Before creating a PR:**
-- Add and commit a changelog entry: `npm run changelog:add -- --type=<type> --entry="<description>"`
+- Add and commit a changelog entry: `pnpm run changelog:add -- --type=<type> --entry="<description>"`
 - Use PR template from `.github/PULL_REQUEST_TEMPLATE.md`
 
 **After creating a PR:**
@@ -224,16 +224,16 @@ gh pr edit <number> --add-label "pr: needs review"
 | phpMyAdmin | `http://localhost:8083` |
 | MySQL | `localhost:5678` |
 
-- First-time: `npm run up:recreate`
-- Subsequent: `npm run up`
-- Worktrees: `npm run worktree:setup` (configure `.env`), `npm run worktree:status` (list all)
+- First-time: `pnpm run up:recreate`
+- Subsequent: `pnpm run up`
+- Worktrees: `pnpm run worktree:setup` (configure `.env`), `pnpm run worktree:status` (list all)
 - Xdebug ready (requires IDE path mapping)
 
 ## Configuration Files
 
 | File | Purpose |
 |------|---------|
-| `package.json` | npm scripts and dependencies |
+| `package.json` | pnpm scripts and dependencies |
 | `composer.json` | PHP dependencies and autoloading |
 | `webpack.config.js` | Main webpack entry |
 | `phpunit.xml.dist` | PHPUnit configuration |

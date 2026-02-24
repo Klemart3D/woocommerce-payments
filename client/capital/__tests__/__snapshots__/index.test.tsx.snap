@@ -274,7 +274,7 @@ exports[`CapitalPage renders the TableCard component with loan data 1`] = `
   will-change: box-shadow;
   border-radius: inherit;
   bottom: 0;
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px 0 rgba(0 ,0, 0, 0);
   opacity: 1;
   left: 0;
   right: 0;

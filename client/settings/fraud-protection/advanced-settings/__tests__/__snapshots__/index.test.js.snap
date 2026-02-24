@@ -124,6 +124,11 @@ exports[`Advanced fraud protection settings doesn't save when there's a validati
   }
 }
 
+.emotion-110 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+  font-size: 13px;
+}
+
 .emotion-112 {
   margin-bottom: calc(4px * 2);
 }
@@ -133,13 +138,8 @@ exports[`Advanced fraud protection settings doesn't save when there's a validati
 }
 
 .emotion-114 {
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 1.4;
-  text-transform: uppercase;
   display: inline-block;
   margin-bottom: calc(4px * 2);
-  padding: 0;
 }
 
 .emotion-116 {
@@ -825,7 +825,7 @@ exports[`Advanced fraud protection settings doesn't save when there's a validati
                         >
                           <div>
                             <div
-                              class="components-base-control wcpay-components-amount-input with-value emotion-12 emotion-13"
+                              class="components-base-control wcpay-components-amount-input with-value emotion-110 emotion-13"
                             >
                               <div
                                 class="components-base-control__field emotion-112 emotion-15"
@@ -870,7 +870,7 @@ exports[`Advanced fraud protection settings doesn't save when there's a validati
                         >
                           <div>
                             <div
-                              class="components-base-control wcpay-components-amount-input with-value emotion-12 emotion-13"
+                              class="components-base-control wcpay-components-amount-input with-value emotion-110 emotion-13"
                             >
                               <div
                                 class="components-base-control__field emotion-112 emotion-15"
@@ -1334,6 +1334,11 @@ exports[`Advanced fraud protection settings doesn't save when there's a validati
   }
 }
 
+.emotion-110 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+  font-size: 13px;
+}
+
 .emotion-112 {
   margin-bottom: calc(4px * 2);
 }
@@ -1343,13 +1348,8 @@ exports[`Advanced fraud protection settings doesn't save when there's a validati
 }
 
 .emotion-114 {
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 1.4;
-  text-transform: uppercase;
   display: inline-block;
   margin-bottom: calc(4px * 2);
-  padding: 0;
 }
 
 .emotion-116 {
@@ -2009,7 +2009,7 @@ exports[`Advanced fraud protection settings doesn't save when there's a validati
                       >
                         <div>
                           <div
-                            class="components-base-control wcpay-components-amount-input with-value emotion-12 emotion-13"
+                            class="components-base-control wcpay-components-amount-input with-value emotion-110 emotion-13"
                           >
                             <div
                               class="components-base-control__field emotion-112 emotion-15"
@@ -2054,7 +2054,7 @@ exports[`Advanced fraud protection settings doesn't save when there's a validati
                       >
                         <div>
                           <div
-                            class="components-base-control wcpay-components-amount-input with-value emotion-12 emotion-13"
+                            class="components-base-control wcpay-components-amount-input with-value emotion-110 emotion-13"
                           >
                             <div
                               class="components-base-control__field emotion-112 emotion-15"
@@ -6592,6 +6592,11 @@ exports[`Advanced fraud protection settings saves settings when there are no val
   min-width: 0;
 }
 
+.emotion-104 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+  font-size: 13px;
+}
+
 .emotion-106 {
   margin-bottom: calc(4px * 2);
 }
@@ -6601,13 +6606,8 @@ exports[`Advanced fraud protection settings saves settings when there are no val
 }
 
 .emotion-108 {
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 1.4;
-  text-transform: uppercase;
   display: inline-block;
   margin-bottom: calc(4px * 2);
-  padding: 0;
 }
 
 .emotion-110 {
@@ -7243,7 +7243,7 @@ exports[`Advanced fraud protection settings saves settings when there are no val
                         >
                           <div>
                             <div
-                              class="components-base-control wcpay-components-amount-input with-value emotion-6 emotion-7"
+                              class="components-base-control wcpay-components-amount-input with-value emotion-104 emotion-7"
                             >
                               <div
                                 class="components-base-control__field emotion-106 emotion-9"
@@ -7288,7 +7288,7 @@ exports[`Advanced fraud protection settings saves settings when there are no val
                         >
                           <div>
                             <div
-                              class="components-base-control wcpay-components-amount-input with-value emotion-6 emotion-7"
+                              class="components-base-control wcpay-components-amount-input with-value emotion-104 emotion-7"
                             >
                               <div
                                 class="components-base-control__field emotion-106 emotion-9"
@@ -7698,6 +7698,11 @@ exports[`Advanced fraud protection settings saves settings when there are no val
   min-width: 0;
 }
 
+.emotion-104 {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+  font-size: 13px;
+}
+
 .emotion-106 {
   margin-bottom: calc(4px * 2);
 }
@@ -7707,13 +7712,8 @@ exports[`Advanced fraud protection settings saves settings when there are no val
 }
 
 .emotion-108 {
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 1.4;
-  text-transform: uppercase;
   display: inline-block;
   margin-bottom: calc(4px * 2);
-  padding: 0;
 }
 
 .emotion-110 {
@@ -8323,7 +8323,7 @@ exports[`Advanced fraud protection settings saves settings when there are no val
                       >
                         <div>
                           <div
-                            class="components-base-control wcpay-components-amount-input with-value emotion-6 emotion-7"
+                            class="components-base-control wcpay-components-amount-input with-value emotion-104 emotion-7"
                           >
                             <div
                               class="components-base-control__field emotion-106 emotion-9"
@@ -8368,7 +8368,7 @@ exports[`Advanced fraud protection settings saves settings when there are no val
                       >
                         <div>
                           <div
-                            class="components-base-control wcpay-components-amount-input with-value emotion-6 emotion-7"
+                            class="components-base-control wcpay-components-amount-input with-value emotion-104 emotion-7"
                           >
                             <div
                               class="components-base-control__field emotion-106 emotion-9"

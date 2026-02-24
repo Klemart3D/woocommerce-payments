@@ -137,7 +137,7 @@ exports[`Documents list renders correctly 1`] = `
   will-change: box-shadow;
   border-radius: inherit;
   bottom: 0;
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px 0 rgba(0 ,0, 0, 0);
   opacity: 1;
   left: 0;
   right: 0;
@@ -605,7 +605,7 @@ exports[`Documents list renders table summary only when the documents summary da
   will-change: box-shadow;
   border-radius: inherit;
   bottom: 0;
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px 0 rgba(0 ,0, 0, 0);
   opacity: 1;
   left: 0;
   right: 0;

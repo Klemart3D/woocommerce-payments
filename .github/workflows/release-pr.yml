@@ -99,8 +99,8 @@ jobs:
           # 'Version' header in woocommerce-payments.php
           sed -i "s/^ \* Version: .*$/ * Version: $RELEASE_VERSION/" woocommerce-payments.php
 
-          # 'version' field in package.json and package-lock.json
-          npm version $RELEASE_VERSION --no-git-tag-version
+          # 'version' field in package.json
+          pnpm version $RELEASE_VERSION --no-git-tag-version
 
           # 'Stable tag' header in readme.txt;
           sed -i "s/^Stable tag: .*$/Stable tag: $RELEASE_VERSION/" readme.txt

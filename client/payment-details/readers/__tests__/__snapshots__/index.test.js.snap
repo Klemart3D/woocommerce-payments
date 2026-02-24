@@ -137,7 +137,7 @@ exports[`RenderPaymentCardReaderChargeDetails renders reader charges 1`] = `
   will-change: box-shadow;
   border-radius: inherit;
   bottom: 0;
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px 0 rgba(0 ,0, 0, 0);
   opacity: 1;
   left: 0;
   right: 0;
@@ -514,7 +514,7 @@ exports[`RenderPaymentCardReaderChargeDetails renders without reader charges 1`]
   will-change: box-shadow;
   border-radius: inherit;
   bottom: 0;
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px 0 rgba(0 ,0, 0, 0);
   opacity: 1;
   left: 0;
   right: 0;

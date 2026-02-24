@@ -68,7 +68,11 @@ module.exports = {
 		'^.+\\.(jpg|svg|png|gif)(\\?.*)?$': '<rootDir>/tests/js/fileMock.js',
 	},
 	transformIgnorePatterns: [
-		'node_modules/(?!(@woocommerce/.+)|gridicons|@automattic/components/|@automattic/material-design-icons/)',
+		// Allow pnpm symlinked paths and ESM-only modules to be transformed
+		'/node_modules/(?!' +
+			'(\\.pnpm/[^/]+/node_modules/)?' +
+			'((@woocommerce/.+)|gridicons|@automattic/components/' +
+			'|@automattic/material-design-icons/|is-plain-obj/|parsel-js/))',
 	],
 	snapshotSerializers: [ '@emotion/jest/serializer' ],
 	verbose: true,

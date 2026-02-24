@@ -15,20 +15,18 @@ jobs:
     steps:
       # clone the repository
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
+          cache: 'pnpm'
       # enable dependencies caching
       - uses: actions/cache@v4
         with:
           path: ~/.cache/composer/
           key:  ${{ runner.os }}-composer-${{ hashFiles('composer.json') }}-${{ hashFiles('composer.lock') }}
-      - uses: actions/cache@v4
-        with:
-          path: ~/.npm/
-          key:  ${{ runner.os }}-npm-${{ hashFiles('package-lock.json') }}
       # install dependencies and run linter
-      - run: npm ci && npm run lint:js && npm run lint:css
+      - run: pnpm install --frozen-lockfile && pnpm run lint:js && pnpm run lint:css
 
   test:
     name:    JS testing
@@ -36,17 +34,15 @@ jobs:
     steps:
       # clone the repository
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
+          cache: 'pnpm'
       # enable dependencies caching
       - uses: actions/cache@v4
         with:
           path: ~/.cache/composer/
           key:  ${{ runner.os }}-composer-${{ hashFiles('composer.lock') }}
-      - uses: actions/cache@v4
-        with:
-          path: ~/.npm/
-          key:  ${{ runner.os }}-npm-${{ hashFiles('package-lock.json') }}
       # install dependencies and run linter
-      - run: npm ci && npm run test:js
+      - run: pnpm install --frozen-lockfile && pnpm run test:js

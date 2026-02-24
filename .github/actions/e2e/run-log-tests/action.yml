@@ -9,7 +9,7 @@ runs:
       # Use +e to trap errors when running E2E tests.
       shell: /bin/bash +e {0}
       run: |
-        npm run test:e2e-ci
+        pnpm run test:e2e-ci
         RESULTS_JSON="$E2E_RESULT_FILEPATH"
         if [[ -f "$RESULTS_JSON" ]]; then
           # Build unique list of spec files with any failed/unexpected/timedOut/interrupted result and count them.
@@ -47,7 +47,7 @@ runs:
 
         if [[ ${#FAILED_SPECS[@]} -eq 0 ]]; then
           echo "::notice::No failed specs found in results file. Re-running full suite instead."
-          npm run test:e2e-ci
+          pnpm run test:e2e-ci
           exit 0
         fi
 
@@ -57,7 +57,7 @@ runs:
         done
 
         # Re-run only the failed spec files.
-        npm run test:e2e-ci "${FAILED_SPECS[@]}"
+        pnpm run test:e2e-ci "${FAILED_SPECS[@]}"
 
     # Archive screenshots if any
     - name: Archive e2e test screenshots & logs

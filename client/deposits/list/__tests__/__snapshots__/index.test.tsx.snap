@@ -137,7 +137,7 @@ exports[`Deposits list renders correctly a single deposit 1`] = `
   will-change: box-shadow;
   border-radius: inherit;
   bottom: 0;
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px 0 rgba(0 ,0, 0, 0);
   opacity: 1;
   left: 0;
   right: 0;
@@ -982,7 +982,7 @@ exports[`Deposits list renders correctly with multiple currencies 1`] = `
   will-change: box-shadow;
   border-radius: inherit;
   bottom: 0;
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px 0 rgba(0 ,0, 0, 0);
   opacity: 1;
   left: 0;
   right: 0;
