@@ -325,7 +325,7 @@ class WooCommerceProductAddOns extends BaseCompatibility {
 	 *
 	 * @return float Adjusted price.
 	 */
-	public function get_product_calculation_price( float $price, int $quantity, \WC_Product $product ): float {
+	public function get_product_calculation_price( float $price, int $quantity, \WC_Product $product ): float { // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
 		return $this->multi_currency->get_price( $price / $quantity, 'product' ) * $quantity;
 	}
 }

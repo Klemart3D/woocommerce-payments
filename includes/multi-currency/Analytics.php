@@ -173,7 +173,7 @@ class Analytics {
 	 *
 	 * @return boolean
 	 */
-	public function disable_report_caching( $args ): bool {
+	public function disable_report_caching( $args ): bool { // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
 		return false;
 	}
 

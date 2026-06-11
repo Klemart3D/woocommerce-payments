@@ -370,7 +370,7 @@ class FrontendCurrencies {
 	 *
 	 * @return array
 	 */
-	public function fix_price_decimals_for_shipping_rates( array $args, $method ): array {
+	public function fix_price_decimals_for_shipping_rates( array $args, $method ): array { // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
 		$args['price_decimals'] = absint( $this->localization_service->get_currency_format( $this->get_store_currency()->get_code() )['num_decimals'] );
 		return $args;
 	}
@@ -416,7 +416,7 @@ class FrontendCurrencies {
 	 *
 	 * @return string The unmodified formatted total.
 	 */
-	public function maybe_clear_order_currency_after_formatted_order_total( $formatted_total, $order, $tax_display, $display_refunded ): string {
+	public function maybe_clear_order_currency_after_formatted_order_total( $formatted_total, $order, $tax_display, $display_refunded ): string { // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
 		if ( null !== $this->order_currency && $this->should_use_order_currency() ) {
 			$this->order_currency = null;
 		}

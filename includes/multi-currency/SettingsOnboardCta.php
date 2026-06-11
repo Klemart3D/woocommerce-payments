@@ -89,7 +89,7 @@ class SettingsOnboardCta extends \WC_Settings_Page {
 	 * @param string $current_section Section being shown.
 	 * @return array
 	 */
-	public function get_settings( $current_section = '' ) {
+	public function get_settings( $current_section = '' ) { // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
 		// Hide the save button because there are no settings to save.
 		global $hide_save_button;
 		$hide_save_button = true;

@@ -65,7 +65,7 @@ class Settings extends \WC_Settings_Page {
 	 * @param string $current_section Section being shown.
 	 * @return array
 	 */
-	public function get_settings( $current_section = '' ) {
+	public function get_settings( $current_section = '' ) { // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
 		return [
 			[
 				'type' => 'wcpay_multi_currency_settings_page',
